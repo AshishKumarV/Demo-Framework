@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity" parallel="tests" thread-count="1"
+	preserve-order="true">
+	<listeners>
+		<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer" />
+		<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TestNGError" />
+		<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener" />
+	</listeners>
+
+	<!-- <test name = "Initialization" parallel="true"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.bsb.wynkAndroid.Test.TestInitialization"></class> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<test name="LaunchApp">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Stats.LaunchAppStats">
+				<methods>
+					<include name="validateLaunchAppAStats" /> 
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	</suite>

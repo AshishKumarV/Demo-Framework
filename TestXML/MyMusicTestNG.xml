@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1"
+	preserve-order="true">
+
+	<listeners>
+		<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer" />
+		<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TestNGError" />
+		<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener" />
+	</listeners>
+	<test name="MyMusic" parallel="true">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.MyMusicTest">
+				<methods>
+					<include name="validateMyMusicSectionsForUnRegUsers" />
+					<include name="validateMyMusicSectionsForRegUsers"/>
+					<include name="validateWynkDirectCardForUnRegUser" />
+					<include name="validateWynkDirectCardForRegUser" />
+					<include name="validateLocalMp3andAllOfflineZeroSongsforUnRegUser" />
+					<include name="validateLocalMp3andAllOfflineSongsForUnRegUser" />
+					<include name="validateLocalMp3SongsForRegUser" />
+					<include name="validateFollowedArtistsForUnRegUser" />
+					<include name="validateFollowedArtistsForRegUser" />
+					<include name="validateMyMusicPlaylistsForUnRegUser" />
+					<include name="validateMyMusicPlaylistForRegUser"/>
+					<include name="validateZeroUnfinishedDownloads">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

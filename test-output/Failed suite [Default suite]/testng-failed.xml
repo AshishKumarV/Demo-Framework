@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
+  <test thread-count="5" name="Default test(failed)(failed)">
+    <classes>
+      <class name="com.bsb.wynkAndroid.Test.PlayListTest">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="afterMethod"/>
+          <include name="launchApp"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="followArtist"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="beforeMethod"/>
+          <include name="shareSong"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- com.bsb.wynkAndroid.Test.PlayListTest -->
+    </classes>
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->

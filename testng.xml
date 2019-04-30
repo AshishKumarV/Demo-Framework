@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity" parallel="tests" thread-count="1"
+	preserve-order="true">
+	<listeners>
+		<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer" />
+		<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TestNGError" />
+		<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener" />
+	</listeners>
+
+	<!-- <test name = "Initialization" parallel="true"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.bsb.wynkAndroid.Test.TestInitialization"></class> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+<<<<<<< HEAD
+<!-- 	<test name="Search">  -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.SearchTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateSearchTopSong" />  -->
+<!-- 					<include name="validateMoreResults" /> -->
+<!-- 					<include name="validateDownloadSongFromSearch" /> -->
+<!-- 					<include name="validateArtistSearch" /> -->
+<!-- 					<include name="validateHistory"/> -->
+<!-- 					<include name="validateListUnderMore"/> -->
+<!-- 					<include name="validatePlayNowFromOverflow"/> -->
+<!-- 					<include name="validateAddToPlayListFromOverflow"/> -->
+<!-- 					<include name="validateGetInfo"/> -->
+<!-- 					<include name="validateClearHistory"/> -->
+<!-- 					<include name="validatePlaySearchedResult"/> -->
+<!-- 					<include name="validateInvalidSearch"/> -->
+<!-- 					<include name="validateTrendingSong"/> -->
+<!-- 					<include name="validateAlbumSearch"/> -->
+<!-- 					<include name="validatePlayListSearch"/> -->
+<!-- 					<include name="validateOverFlowMenuOptions" /> -->
+<!-- 					<include name="validateVoiceSearch" /> -->
+<!-- 					<include name="validateCancelSearch"/> -->
+<!-- 					<include name="validateSearchKeywordFromResultScreen"/> -->
+<!-- 					<include name="validateSearchResultConsumption"/> -->
+<!-- 					<include name="validateSearchAnotherKeyword"/>	 -->
+<!-- 					<include name="validateConsumeRecentSearch"/>	  -->
+<!-- 					<include name="validateAutosuggest"/> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+
+<!-- 	<test name="Download Song" preserve-order="true"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.DownloadSongsTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateDownloadAllSongsOfPlayList" /> -->
+<!-- 					<include name="validateStopDownloadButtonVerify" /> -->
+<!-- 					<include name="validateDownloadAllSongsOfPlayListHavingMorethan500Songs" /> -->
+<!-- 					<include name="validateRedownload" /> -->
+<!-- 					<include name="validateRedownloadHigh" /> -->
+<!-- 					<include name="validateRedownloadMedium" /> -->
+<!-- 					<include name="validateRedownloadHD" /> -->
+<!-- 					<include name="validateAllStatsCheck" /> -->
+<!-- 					<include name="validateDownloadFromArtist" /> -->
+<!-- 					<include name="validateDownloadUnfinishedSongs" /> -->
+<!-- 					<include name="validateDownloadSingleSongOfPlayList" /> -->
+<!-- 					<include name="validateDownloadFromAlbum" /> -->
+<!-- 					<include name="validateDownloadAllFromAlbum" /> -->
+<!-- 			  		<include name="validateDownloadOn4G" /> -->
+<!-- 					<include name="validateDownloadOn3G" /> -->
+<!-- 					<include name="validateDownloadOn2G" />  -->
+<!-- 					<include name="validateDownloadOneSongOfFollowedPlayList" /> -->
+<!-- 					<include name="validateDownloadAllSongFollowedPlayList" /> -->
+<!-- 					<include name="validateDownloadAfter3Play" /> -->
+<!-- 					<include name="validateOfflineMusic" /> -->
+<!-- 					<include name="validateErrorState" /> -->
+<!-- 					<include name="validateDownloadAllFromArtist" /> -->
+<!-- 					<include name="validateDownloadForUnregisteredUser" /> -->
+<!-- 					<include name="validateDownloadUnRegisteredUserArtist" /> -->
+<!-- 					<include name="validateDownloadUnRegisteredUserAlbum" /> -->
+<!-- 					<include name="validateDownloadUnRegisteredPlayer" /> -->
+<!-- 					<include name="validateDownloadUnRegisteredSearch" /> -->
+<!-- 					<include name="validateDownloadUnRegisteredUserPlayList" /> -->
+<!-- 					<include name="validateDownloadUnRegisteredPlayList" /> -->
+<!-- 				 	<include name="validateDSMFunctionality" /> -->
+<!--  					<include name="validateDSMFunctionality2G" />   -->
+<!-- 					<include name="validateDeleteMultipleDownloaded" /> -->
+<!-- 					<include name="validateLocalMP3DownloadVerifyTest" /> -->
+<!-- 					<include name="validateUnfinishedDownloadTest" /> -->
+<!-- 					<include name="validateDownloadSongFromPlayerTest" /> -->
+<!-- 					<include name="validateDownloadSongFromRadio" /> -->
+<!-- 					<include name="validateErrorStateNotRedownloadTest" /> -->
+<!-- 					<include name="validateReDownloadFileNotDeleteTest" /> -->
+<!-- 					<include name="validateRedownloadSongWithDifferentQualityTest" /> -->
+<!-- 					<include name="validateDownloadSongFromQueueTest" /> -->
+<!-- 					<include name="validateDownloadErrorStateSongTest" /> -->
+<!-- 					<include name="validateUnMappedLocalMP3SongTest" /> -->
+<!-- 					<include name="validateDownloadUnRegisteredUserFollowArtist" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+=======
+	<test name="Search">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.SearchTest">
+				<methods>
+					<include name="searchTopSong" />
+					<include name="verifyMoreResults" />
+					<include name="downloadSongFromSearch" />
+					<include name="verifyArtistSearch" />
+					<include name="verifyHistory" />
+					<include name="verifyListUnderMore" />
+					<include name="verifyPlayNowFromOverflow" />
+					<include name="verifyAddToPlayListFromOverflow" />
+					<include name="verifyGetInfo" />
+					<include name="clearHistory" />
+					<include name="verifyPlaySearchedResult" />
+					<include name="invalidSearch" />
+					<include name="verifyTrendingSong" />
+					<include name="verifyAlbumSearch" />
+					<include name="verifyPlayListSearch" />
+					<include name="verifyOverFlowMenuOptions" />
+					<include name="verifyVoiceSearch" />
+					<include name="cancelSearch" />
+					<include name="searchKeywordFromResultScreen" />
+					<include name="searchResultConsumption" />
+					<include name="searchAnotherKeyword" />
+					<include name="consumeRecentSearch" />
+					<include name="autosuggest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="Download Song" preserve-order="true">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.DownloadSongsTest">
+				<methods>
+					<include name="validateDownloadAllSongsOfPlayList" />
+					<include name="validateStopDownloadButtonVerify" />
+					<include name="validateDownloadAllSongsOfPlayListHavingMorethan500Songs" />
+					<include name="validateRedownload" />
+					<include name="validateRedownloadHigh" />
+					<include name="validateRedownloadMedium" />
+					<include name="validateRedownloadHD" />
+					<include name="validateAllStatsCheck" />
+					<include name="validateDownloadFromArtist" />
+					<include name="validateDownloadUnfinishedSongs" />
+					<include name="validateDownloadSingleSongOfPlayList" />
+					<include name="validateDownloadFromAlbum" />
+					<include name="validateDownloadAllFromAlbum" />
+					<include name="validateDownloadOn4G" />
+					<include name="validateDownloadOn3G" />
+					<include name="validateDownloadOn2G" />
+					<include name="validateDownloadOneSongOfFollowedPlayList" />
+					<include name="validateDownloadAllSongFollowedPlayList" />
+					<include name="validateDownloadAfter3Play" />
+					<include name="validateOfflineMusic" />
+					<include name="validateErrorState" />
+					<include name="validateDownloadAllFromArtist" />
+					<include name="validateDownloadForUnregisteredUser" />
+					<include name="validateDownloadUnRegisteredUserArtist" />
+					<include name="validateDownloadUnRegisteredUserAlbum" />
+					<include name="validateDownloadUnRegisteredPlayer" />
+					<include name="validateDownloadUnRegisteredSearch" />
+					<include name="validateDownloadUnRegisteredUserPlayList" />
+					<include name="validateDownloadUnRegisteredPlayList" />
+					<include name="validateDSMFunctionality" />
+					<include name="validateDSMFunctionality2G" />
+					<include name="validateDeleteMultipleDownloaded" />
+					<include name="validateLocalMP3DownloadVerifyTest" />
+					<include name="validateUnfinishedDownloadTest" />
+					<include name="validateDownloadSongFromPlayerTest" />
+					<include name="validateDownloadSongFromRadio" />
+					<include name="validateErrorStateNotRedownloadTest" />
+					<include name="validateReDownloadFileNotDeleteTest" />
+					<include name="validateRedownloadSongWithDifferentQualityTest" />
+					<include name="validateDownloadSongFromQueueTest" />
+					<include name="validateDownloadErrorStateSongTest" />
+					<include name="validateUnMappedLocalMP3SongTest" />
+					<include name="validateDownloadUnRegisteredUserFollowArtist" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Playlist" parallel="true">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.PlayListTest">
+				<methods>
+					<include name="validateCreateNewPlaylist" />
+					<include name="validateWynkPlayLisElements" />
+					<include name="validateSearchingWithPlayList" />
+					<include name="validateUserCreatedPlayListAndAddToPlayList" />
+					<include name="validateMakePlayListPrivateOrPublic" />
+					<exclude name="validatePlayAllSong" />
+					<include name="validateWynkPlaylistfollowOrUnFollow" />
+					<include name="validateUpdatePlaylist" />
+					<include name="validateWynkPlaylistSongMenubarOption" />
+					<include name="validateWynkPlaylistfollowOrUnFollowWithOffline" />
+					<include name="validateOfflinePlaylist">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+>>>>>>> level1
+
+<!-- 	<test name="Playlist" parallel="true"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.PlayListTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateCreateNewPlaylist" /> -->
+<!-- 					<include name="validateWynkPlayLisElements"/> -->
+<!-- 					<include name="validateSearchingWithPlayList" /> -->
+<!-- 					<include name="validateUserCreatedPlayListAndAddToPlayList" /> -->
+<!-- 					<include name="validateMakePlayListPrivateOrPublic" /> -->
+<!-- 					<exclude name="validatePlayAllSong" /> -->
+<!-- 					<include name="validateWynkPlaylistfollowOrUnFollow" /> -->
+<!-- 					<include name="validateUpdatePlaylist" /> -->
+<!-- 					<include name="validateWynkPlaylistSongMenubarOption" /> -->
+<!-- 					<include name="validateWynkPlaylistfollowOrUnFollowWithOffline" /> -->
+<!-- 					<include name="validateOfflinePlaylist"> -->
+<!-- 					</include> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="Playlist" parallel="true"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.PlayListTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="aCreateNewPlaylist" /> -->
+<!-- 					<include name="verifyWynkPlayLisElements" /> -->
+<!-- 					<include name="searchingWithPlayList" /> -->
+<!-- 					<include name="verifyUserCreatedPlayListElementAndAddToPlayList" /> -->
+<!-- 					<include name="makePlayListPrivateOrPublic" /> -->
+<!-- 					<exclude name="playAllSong" /> -->
+<!-- 					<include name="WynkPlaylistfollowOrUnFollow" /> -->
+<!-- 					<include name="UpdatePlaylist" /> -->
+<!-- 					<include name="verifywynkPlaylistSongMenubarOption" /> -->
+<!-- 					<include name="WynkPlaylistfollowOrUnFollowWithOffline" /> -->
+<!-- 					<include name="OfflinePlaylist"/> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+
+	<test name="OfflineTest"> 
+		<classes> 
+			<class name="com.bsb.wynkAndroid.Test.OfflineTest"> 
+				<methods> 
+					<include name="validateEmptyState"/>
+					<include name="validateCroutonBarExistence"/>
+					<include name="validateDownloadedSongPlayinOffline"/> 
+					<include name="validateCachedSegmentPlayInOfflineMode"/>  
+					<include name="validateLocalMp3InOffline"/>
+					<include name="validateOnlineSongIsNotPlayed"/>
+					<include name="validateAddToPlaylistInOffline"/>
+					<include name="validateRadioInitiateInOffline"/>
+					<include name="validatePlayRentedSongFromHome"/>
+					<include name="validateSearchInOffline"/>
+					<include name="validateFollowArtistAndPlaylist"/>
+				</methods> 
+			</class> 
+		</classes> 
+	</test>
+
+<!-- 	<test name="QueueTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.QueueTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateSongToPlaylist" /> -->
+<!-- 					<include name="validateAddSongsToNewPlaylist" /> -->
+<!-- 					<include name="validateMultiplePlayListInQueue" /> -->
+<!-- 					<include name="validateShuffle" /> -->
+<!-- 					<include name="validateQueueHeader" /> -->
+<!-- 					<include name="validatePlayMorethan500songs" /> -->
+<!-- 					<include name="validateQueueHeaderOnScroll" /> -->
+<!-- 					<include name="validateRemoveSongFromQueue" /> -->
+<!-- 					<include name="validatePlayerNotificationControls" /> -->
+<!-- 					<include name="validateLockScreenControls" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="Music Preferences"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.MusicPreferenceTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateMusicPreference" /> -->
+<!-- 					<include name="validateSelectedLanguageIsChecked" /> -->
+<!-- 					<include name="validateOnly1LanguageSelected" /> -->
+<!-- 					<include name="validateNonCuratedLanguages" /> -->
+<!-- 					<include name="validate5Languageswith2NonCurated" /> -->
+<!-- 					<include name="validateHomeLanguageOption" /> -->
+<!-- 					<include name="validateOnClickBehaviour" /> -->
+<!-- 					<include name="validateOnClickBehaviourSetAddtoQueue" /> -->
+<!-- 					<include name="validateOnClickBehaviourPopUpClossed" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="StreamingTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.StreamingTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateStreamingForUnregisteredUser" /> -->
+<!-- 					<include name="validateStreamingOnAuto" /> -->
+<!-- 					<include name="validateStreamingOnAllBitRates" /> -->
+<!-- 					<include name="validatePlayerControls" /> -->
+<!-- 					<include name="validateDownloadAndStreaming" /> -->
+<!-- 					<include name="validateSongCaching" /> -->
+<!-- 					<include name="validateLocalMp3InAirPlaneMode" /> -->
+<!-- 					<include name="validateOfflineModeStreaming" /> -->
+<!-- 					<include name="validateCachedSongStreamingInOffline" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<<<<<<< HEAD
+<!-- 	<test name="ArtistTest"> -->
+<!-- 		<classes> -->
+<!--          <class name="com.bsb.wynkAndroid.Test.ArtistTest" > -->
+<!-- 	         <methods> -->
+<!-- 		         <include name="validateTopSection" /> -->
+<!-- 		         <include name="validateSearchSection"/> -->
+<!-- 		         <include name="validateSearchWithToggleDisabled"/> -->
+<!-- 		         <include name="validateSearchWithToggleEnabled"/> -->
+<!-- 		         <include name="validateOverFlowMenuItems"/> -->
+<!-- 		         <include name="validateCuratedArtistPage"/> -->
+<!-- 		         <include name="validateNonCuratedArtistPage"></include> -->
+<!-- 		         <include name="validateTopSongsStory"/> -->
+<!-- 	         	 <include name="validatePlayTopSongs"/> -->
+<!-- 	         	 <include name="validateAlbumStory"/> -->
+<!-- 	         	 <include name="validatePlaylistStory"/> -->
+<!-- 	         	 <include name="validateTwitterFeedSection"/> -->
+<!-- 	         	 <include name="validateBiographySection"/> -->
+<!-- 	         	 <include name="validateSocialMediaHandles"/> -->
+<!-- 	         	 <include name="validateFollowSectionOfArtist"/> -->
+<!-- 	         	 <include name="validateMyMusicSection"/> -->
+<!-- 	         </methods> -->
+<!--          </class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+<!-- 	<test name="HomescreenTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.HomescreenTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateSectionsPresent" /> -->
+<!-- 					<include name="latestLangSection" /> -->
+<!-- 					<include name="wynkTop100" /> -->
+<!-- 					<include name="artistsRail" /> -->
+<!-- 					<include name="topPlaylistRail" /> -->
+<!-- 					<include name="topAlbumsRail" /> -->
+<!-- 					<include name="moodsRail" /> -->
+<!-- 					<include name="followdArtistRail" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="SettingsTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.SettingsTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="musicListeningPreferencesTest" /> -->
+<!-- 					<include name="clickBehaviourTest" /> -->
+<!-- 					<include name="OfflneMusicPreferencesTest" /> -->
+<!-- 					<include name="logInUserProfileTest" /> -->
+<!-- 					<include name="nonlogInUserProfileTest" /> -->
+<!-- 					<include name="helpAndSupportPageTest" /> -->
+<!-- 					<include name="saveDataModeTest" /> -->
+<!-- 					<include name="wynkAppWithPremiumOrNotTest" /> -->
+<!-- 					<include name="localMp3SongsTest" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="QueueTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.QueueTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateSongToPlaylist" /> -->
+<!-- 					<include name="validateAddSongsToNewPlaylist" /> -->
+<!-- 					<include name="validateMultiplePlayListInQueue" /> -->
+<!-- 					<include name="validateShuffle" /> -->
+<!-- 					<include name="validateQueueHeader" /> -->
+<!-- 					<include name="validatePlayMorethan500songs" /> -->
+<!-- 					<include name="validateQueueHeaderOnScroll" /> -->
+<!-- 					<include name="validateRemoveSongFromQueue" /> -->
+<!-- 					<include name="validatePlayerNotificationControls" /> -->
+<!-- 					<include name="validateLockScreenControls" /> -->
+
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="Music Preferences"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.MusicPreferenceTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateMusicPreference" /> -->
+<!-- 					<include name="verifySelectedLanguageIsChecked" /> -->
+<!-- 					<include name="verifyOnly1LanguageSelected" /> -->
+<!-- 					<include name="verifyNonCuratedLanguages" /> -->
+<!-- 					<include name="verify5Languageswith2NonCurated" /> -->
+<!-- 					<include name="verifyHomeLanguageOption" /> -->
+<!-- 					<include name="onClickBehaviour" /> -->
+<!-- 					<include name="onClickBehaviourSetAddtoQueue" /> -->
+<!-- 					<include name="onClickBehaviourPopUpClossed" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="StreamingTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.StreamingTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateStreamingForUnregisteredUser" /> -->
+<!-- 					<include name="validateStreamingOnAuto" /> -->
+<!-- 					<include name="validateStreamingOnAllBitRates" /> -->
+<!-- 					<include name="validatePlayerControls" /> -->
+<!-- 					<include name="validateDownloadAndStreaming" /> -->
+<!-- 					<include name="validateSongCaching" /> -->
+<!-- 					<include name="validateLocalMp3InAirPlaneMode" /> -->
+<!-- 					<include name="validateOfflineModeStreaming" /> -->
+<!-- 					<include name="validateCachedSongStreamingInOffline" /> -->
+
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="ArtistTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.ArtistTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateTopSection" /> -->
+<!-- 					<include name="validateSearchSection" /> -->
+<!-- 					<include name="validateSearchWithToggleDisabled" /> -->
+<!-- 					<include name="validateSearchWithToggleEnabled" /> -->
+<!-- 					<include name="validateOverFlowMenuItems" /> -->
+<!-- 					<include name="validateCuratedArtistPage" /> -->
+<!-- 					<include name="validateNonCuratedArtistPage"></include> -->
+<!-- 					<include name="validateTopSongsStory" /> -->
+<!-- 					<include name="validatePlayTopSongs" /> -->
+<!-- 					<include name="validateAlbumStory" /> -->
+<!-- 					<include name="validatePlaylistStory" /> -->
+<!-- 					<include name="validateTwitterFeedSection" /> -->
+<!-- 					<include name="validateBiographySection" /> -->
+<!-- 					<include name="validateSocialMediaHandles" /> -->
+<!-- 					<include name="validateFollowSectionOfArtist" /> -->
+<!-- 					<include name="validateMyMusicSection" /> -->
+
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+<!-- 	<test name="HomescreenTest"> -->
+<!-- 	<classes> -->
+<!-- 	<class name="com.bsb.wynkAndroid.Test.HomescreenTest"> -->
+<!-- 	<methods> -->
+<!-- 	<include name="validateSectionsPresent" /> -->
+<!-- 	<include name="latestLangSection" /> -->
+<!-- 	<include name="wynkTop100" /> -->
+<!-- 	<include name="artistsRail" /> -->
+<!-- 	<include name="topPlaylistRail" /> -->
+<!-- 	<include name="topAlbumsRail" /> -->
+<!-- 	<include name="moodsRail" /> -->
+<!-- 	<include name="followdArtistRail" /> -->
+<!-- 	</methods> -->
+<!-- 	</class> -->
+<!-- 	</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="SettingsTest"> -->
+<!-- 	<classes> -->
+<!-- 	<class name="com.bsb.wynkAndroid.Test.SettingsTest"> -->
+<!-- 	<methods> -->
+<!-- 	<include name="musicListeningPreferencesTest" /> -->
+<!-- 	<include name="clickBehaviourTest" /> -->
+<!-- 	<include name="OfflneMusicPreferencesTest" /> -->
+<!-- 	<include name="logInUserProfileTest" /> -->
+<!-- 	<include name="nonlogInUserProfileTest" /> -->
+<!-- 	<include name="helpAndSupportPageTest" /> -->
+<!-- 	<include name="saveDataModeTest" /> -->
+<!-- 	<include name="wynkAppWithPremiumOrNotTest" /> -->
+<!-- 	<include name="localMp3SongsTest" /> -->
+<!-- 	</methods> -->
+<!-- 	</class> -->
+<!-- 	</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="RegistrationTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.RegistrationTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateRegistrationInvocation" /> -->
+<!-- 					<include name="validateRegistrationPopUp" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="AppLaunchTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.AppLaunchTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateSplashScreen" /> -->
+<!-- 					<include name="validatePermissions" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="UpgradesTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.UpgradesTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateUpgradeForUnregisteredUser" /> -->
+<!-- 					<include name="validateUpgradeForRegisteredUser" /> -->
+<!-- 					<include name="validateMigration" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="RadioTest"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.RadioTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateRadioTabRails" /> -->
+<!-- 					<include name="validateRadio" /> -->
+<!-- 					<include name="validateRadioPlayer" /> -->
+<!-- 					<include name="validateRadioPlayerControls" /> -->
+<!-- 					<include name="validateExitRadio" /> -->
+<!-- 					<include name="validateUseCaseRail" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+=======
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="HomescreenTest">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.HomescreenTest">
+				<methods>
+					<include name="validateSectionsPresent" />
+					<include name="latestLangSection" />
+					<include name="wynkTop100" />
+					<include name="artistsRail" />
+					<include name="topPlaylistRail" />
+					<include name="topAlbumsRail" />
+					<include name="moodsRail" />
+					<include name="followdArtistRail" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Settings" parallel="true">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.SettingsTest">
+				<methods>
+					<include name="validateMusicPreferences" />
+					<include name="validateClickBehaviour" />
+					<include name="validateOfflineMusicPreferences" />
+					<include name="validateWynkAppWithPremium" />
+					<include name="validateLocalMp3Songs" />
+					<include name="validateUnregUserProfile" />
+					<include name="validateLogInUserProfile" />
+					<include name="validateHelpAndSupport" />
+					<include name="validateSaveDataMode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- <test name="MyMusicTest"> <classes> <class name="com.bsb.wynkAndroid.Test.MyMusicTest"> 
+		<methods> <include name="myMusicUITest" /> <include name="myMusicUIForRegUserTest" 
+		/> <include name="MyPlaylistTestUI"/> </methods> </class> </classes> </test> -->
+
+	<test name="RegistrationTest">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.RegistrationTest">
+				<methods>
+					<include name="validateRegistrationInvocation" />
+					<include name="validateRegistrationPopUp" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="AppLaunchTest">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.AppLaunchTest">
+				<methods>
+					<include name="validateSplashScreen" />
+					<include name="validatePermissions" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="UpgradesTest">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.UpgradesTest">
+				<methods>
+					<include name="validateUpgradeForUnregisteredUser" />
+					<include name="validateUpgradeForRegisteredUser" />
+					<include name="validateMigration" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="RadioTest">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.RadioTest">
+				<methods>
+					<include name="validateRadioTabRails" />
+					<include name="validateRadio" />
+					<include name="validateRadioPlayer" />
+					<include name="validateRadioPlayerControls" />
+					<include name="validateExitRadio" />
+					<include name="validateUseCaseRail" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+>>>>>>> level1
+
+	<test name="SongInfoTest">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.SongInfoTest">
+				<methods>
+					<include name="validateSongInfoTest" />
+					<include name="validateMP3SongInfoTest" />
+					<include name="validateSongInfoWithoutAlbum" />
+					<include name="validateAlbumInfoTest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+<<<<<<< HEAD
+<!-- <test name="MyMusic" parallel="true"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.MyMusicTest"> -->
+<!-- 				<methods> -->
+<!-- 			    	<include name="validateMyMusicSectionsForUnRegUsers" /> -->
+<!-- 			    	<include name="validateMyMusicSectionsForRegUsers" /> -->
+<!-- 			    	<include name="validateMyMusicSectionsForRegUsers" /> -->
+<!-- 			    	<include name="validateWynkDirectCardForUnRegUser" /> -->
+<!-- 			    	<include name="validateWynkDirectCardForRegUser" /> -->
+<!-- 			    	<include name="validateLocalMp3andAllOfflineZeroSongsforUnRegUser" /> -->
+<!-- 			    	<include name="validateLocalMp3andAllOfflineSongsForUnRegUser" /> -->
+<!-- 			    	<include name="validateLocalMp3SongsForRegUser" /> -->
+<!-- 			    	<include name="validateFollowedArtistsForUnRegUser" /> -->
+<!-- 			    	<include name="validateFollowedArtistsForRegUser" /> -->
+<!-- 			    	<include name="validateMyMusicPlaylistsForUnRegUser" /> -->
+<!-- 			    	<include name="validateMyMusicPlaylistForRegUser" /> -->
+<!-- 			    	<include name="validateZeroUnfinishedDownloads" > -->
+<!-- 					</include> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> Test -->
+=======
+	<test name="MyMusic" parallel="true">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.MyMusicTest">
+				<methods>
+					<include name="validateMyMusicSectionsForUnRegUsers" />
+					<include name="validateMyMusicSectionsForRegUsers" />
+					<include name="validateMyMusicSectionsForRegUsers" />
+					<include name="validateWynkDirectCardForUnRegUser" />
+					<include name="validateWynkDirectCardForRegUser" />
+					<include name="validateLocalMp3andAllOfflineZeroSongsforUnRegUser" />
+					<include name="validateLocalMp3andAllOfflineSongsForUnRegUser" />
+					<include name="validateLocalMp3SongsForRegUser" />
+					<include name="validateFollowedArtistsForUnRegUser" />
+					<include name="validateFollowedArtistsForRegUser" />
+					<include name="validateMyMusicPlaylistsForUnRegUser" />
+					<include name="validateMyMusicPlaylistForRegUser" />
+					<include name="validateZeroUnfinishedDownloads">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+>>>>>>> level1
+
+
+</suite>

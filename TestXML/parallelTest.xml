@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2" >
+<listeners>
+<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer"/>
+<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter"/>
+<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot"/>
+<listener class-name="com.bsb.wynkAndroid.Report.TestNGError"/>
+</listeners>
+
+ <test name="Test Queue" >
+   <parameter name="url" value="http://0.0.0.0:4724/wd/hub"/>     
+   <parameter name="udid" value="8HY9WCHAQSJN8PIR"/>        
+      <classes>
+          <class name="com.bsb.wynkAndroid.Test.QueueTest" >
+	         <methods>       
+		         <include name="songToPlaylist"/>
+		         <include name="addSongsToNewPlaylist"/>
+		         <include name="verifyRandomPlayWhenShuffleIsOff" />
+		         <include name="verifyTwoPlayListInQueue" />
+		         <include name="addMultipleSongFromPlayListToNewPlayList" />
+		          <include name="selectAllSongsAndDeleteFromQueue"/>
+		          <include name="verifySongInfo"/> 
+		         <include name="verifyNextSongIsPlayedAfterCurrentSongIsDeletedFromQueue" />     
+		         <exclude name="changePositionOfSong"/>
+	         </methods>
+         </class>
+      </classes>   
+  </test>
+  
+<!--   <test name="Test Queue2" > -->
+<!-- 		<parameter name="url" value="http://192.168.104.245:4723/wd/hub"/>    -->
+<!-- 		<parameter name="udid" value="59d8ff77d140"/>   -->
+<!--       <classes> -->
+<!--                   <class name="com.bsb.wynkAndroid.Test.StreamingTest" > -->
+<!-- 	         <methods> -->
+<!-- 		         <include name="setSetting" /> -->
+<!-- 		         <include name="validateCachePersistsAfterAppKill"/> -->
+<!-- 		         <include name="verifyAutoStreaming"/> -->
+<!-- 		         <include name="validateMiniPlayer"/> -->
+<!-- 		         <include name="validateLocalMp3InAirPlaneMode"/> -->
+<!-- 		         <include name="partiallyCachedSongStreamingOnNetwork"/> -->
+<!-- 		         <include name="validatePlayerControls"/> -->
+<!-- 		         <include name="validateProactiveCaching"/> -->
+<!-- 	         </methods> -->
+<!--          </class> -->
+<!--       </classes>    -->
+<!--   </test> -->
+
+  </suite>
+  
+ 

@@ -1,0 +1,879 @@
+<html>
+<head>
+<title>TestNG:  ArtistTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ArtistTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/16</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 26 12:43:58 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1330 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.launchApp()'><b>launchApp</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Parameters: http://0.0.0.0:4445/wd/hub</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace292958927", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace292958927'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.closeDriver()'><b>closeDriver</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateAlbumStory()'><b>validateAlbumStory</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_088,TC_Artist_091,TC_Artist_092,TC_Artist_093,TC_Artist_094,TC_Artist_095,TC_Artist_099,TC_Artist_100,TC_Artist_104</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1334618867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1334618867'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateBiographySection()'><b>validateBiographySection</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_159,TC_Artist_164,TC_Artist_165,TC_Artist_167,TC_Artist_169,TC_Artist_171,TC_Artist_172</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1353838640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1353838640'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateCuratedArtistPage()'><b>validateCuratedArtistPage</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_050,TC_Artist_205,TC_Follow_038</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1280443567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1280443567'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateFollowSectionOfArtist()'><b>validateFollowSectionOfArtist</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Follow_001,TC_Follow_002,TC_Follow_003,TC_Follow_004,TC_Follow_017,TC_Follow_019,TC_Follow_021,TC_Follow_023,TC_Follow_024,TC_Follow_039,TC_Follow_040,TC_Follow_041,TC_Follow_042</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1612853208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1612853208'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateMyMusicSection()'><b>validateMyMusicSection</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Follow_006</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace795590320", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace795590320'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateNonCuratedArtistPage()'><b>validateNonCuratedArtistPage</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_055,TC_Artist_056,TC_Artist_057,TC_Artist_058,TC_Artist_060,TC_Artist_071,TC_Artist_216</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2004655561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2004655561'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateOverFlowMenuItems()'><b>validateOverFlowMenuItems</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_034,TC_Artist_035,TC_Artist_036,TC_Artist_037,TC_Artist_038,TC_Artist_039,TC_Artist_040,TC_Artist_041,TC_Artist_042,TC_Artist_043,TC_Artist_044</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1627496281", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1627496281'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validatePlayTopSongs()'><b>validatePlayTopSongs</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_073,TC_Artist_075,TC_Artist_076</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1385750189", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1385750189'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validatePlaylistStory()'><b>validatePlaylistStory</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_109,TC_Artist_112,TC_Artist_113,TC_Artist_114,TC_Artist_115,TC_Artist_116,TC_Artist_119,TC_Artist_120,TC_Artist_121,TC_Artist_127,TC_Artist_128</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace847606512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace847606512'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateSearchSection()'><b>validateSearchSection</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_018,TC_Artist_019,TC_Artist_022,TC_Artist_025</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace828088650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace828088650'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateSearchWithToggleDisabled()'><b>validateSearchWithToggleDisabled</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_021</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1156210828", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1156210828'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateSearchWithToggleEnabled()'><b>validateSearchWithToggleEnabled</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_020</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace460333119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace460333119'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateSocialMediaHandles()'><b>validateSocialMediaHandles</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_183,TC_Artist_186,TC_Artist_187,TC_Artist_188,TC_Artist_189,TC_Artist_190,TC_Artist_191,TC_Artist_193,TC_Artist_194</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1599556802", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1599556802'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateTopSection()'><b>validateTopSection</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_001,TC_Artist_002,TC_Artist_003,TC_Artist_006,TC_Artist_009<br/>
+<a href="#Output-223000346" onClick='toggleBox("Output-223000346", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-223000346" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-223000346">
+Device Used = Could not find device!!<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace223000346", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace223000346'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateTopSongsStory()'><b>validateTopSongsStory</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_063,TC_Artist_066,TC_Artist_067</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace889928215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace889928215'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.ArtistTest.validateTwitterFeedSection()'><b>validateTwitterFeedSection</b><br>Test class: com.bsb.wynkAndroid.Test.ArtistTest<br>Test method: TC_Artist_145,TC_Artist_146,TC_Artist_147,TC_Artist_148,TC_Artist_149,TC_Artist_155,TC_Artist_158</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace739210872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace739210872'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.ArtistTest.launchApp(ArtistTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.ArtistTest@3ee0fea4</td></tr>
+</table><p>
+</body>
+</html>

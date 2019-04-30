@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Deep Links">
+
+	<listeners>
+		<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer" />
+		<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TestNGError" />
+		<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener" />
+	</listeners>
+	
+	
+ 	<test name="DeepLinks" preserve-order="true">
+      <classes>
+         <class name="com.bsb.wynkAndroid.Test.DeepLinkTest" >
+         <methods >
+         	<include name="validateDeepLinkTest"/>
+         	<include name="validateBackGroundDeepLinkTest"/>
+         	<include name="validateKillAppDeepLinkTest"/>
+         </methods>
+         </class>
+      </classes>   
+  	</test>
+  
+</suite>
+ 

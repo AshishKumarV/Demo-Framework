@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Download Songs">
+
+	<listeners>
+		<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer" />
+		<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TestNGError" />
+		<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener" />
+	</listeners>
+	
+	
+ 	<test name="Download Song" preserve-order="true">
+      <classes>
+         <class name="com.bsb.wynkAndroid.Test.DownloadSongsTest" >
+         <methods >
+         <include name="validateDownloadAllSongsOfPlayList" />  
+            <include name="validateStopDownloadButtonVerify"/>  
+        	<include name="validateDownloadAllSongsOfPlayListHavingMorethan500Songs"/>    
+	  		<include name="validateRedownload"/>   
+  			<include name="validateRedownloadHigh"/> 
+			<include name="validateRedownloadMedium"/> 
+			<include name="validateRedownloadHD"/>   
+		<!--  	<include name="validateAllStatsCheck"/> -->
+			<include name="validateDownloadFromArtist"/>   
+	  		<include name="validateDownloadUnfinishedSongs"/> 
+			<include name="validateDownloadSingleSongOfPlayList"/> 
+		  	<include name="validateDownloadFromAlbum"/>  
+	    	<include name="validateDownloadAllFromAlbum"/>  
+		<!--  	<include name="validateDownloadOn4G"/>  
+			<include name="validateDownloadOn3G"/>  
+			<include name="validateDownloadOn2G"/>  	-->
+			<include name="validateDownloadOneSongOfFollowedPlayList"/>  
+			<include name="validateDownloadAllSongFollowedPlayList"/>   
+  			<include name="validateDownloadAfter3Play"/>   
+			<include name="validateOfflineMusic"/>  
+			<include name="validateErrorState"/>  
+	  	    <include name="validateDownloadAllFromArtist"/>   
+	    	<include name="validateDownloadForUnregisteredUser"/>   
+			<include name="validateDownloadUnRegisteredUserArtist"/>   
+			<include name="validateDownloadUnRegisteredUserAlbum"/>  
+			<include name="validateDownloadUnRegisteredPlayer"/>   
+			<include name="validateDownloadUnRegisteredSearch"/>   
+			<include name="validateDownloadUnRegisteredUserPlayList"/>  
+	      	<include name="validateDownloadUnRegisteredPlayList"/>   
+		<!--  	<include name="validateDSMFunctionality"/>   
+	 		<include name="validateDSMFunctionality2G"/>  -->
+			<include name="validateDeleteMultipleDownloaded"/>    
+	  		<include name="validateLocalMP3DownloadVerifyTest"/> 
+			<include name="validateUnfinishedDownloadTest"/>  
+	 		<include name="validateDownloadSongFromPlayerTest"/> 
+			<include name="validateDownloadSongFromRadio"/>   
+			<include name="validateErrorStateNotRedownloadTest"/>
+			<include name="validateReDownloadFileNotDeleteTest"/>
+		 	<include name="validateRedownloadSongWithDifferentQualityTest"/> 
+			<include name="validateDownloadSongFromQueueTest"/>
+ 			<include name="validateDownloadErrorStateSongTest"/>
+			<include name="validateUnMappedLocalMP3SongTest"/> 
+			<include name="validateDownloadUnRegisteredUserFollowArtist"/>
+         </methods>
+         </class>
+      </classes>   
+  	</test>
+  
+</suite>
+ 

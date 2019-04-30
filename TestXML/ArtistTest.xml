@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Artist">
+<listeners>
+<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer"/>
+<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter"/>
+<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot"/>
+<listener class-name="com.bsb.wynkAndroid.Report.TestNGError"/> 
+<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener"/>
+</listeners>
+ 
+ <test name="ArtistTest">
+      <classes>
+         <class name="com.bsb.wynkAndroid.Test.ArtistTest" >
+	         <methods>
+		         <include name="validateTopSection" />
+		         <include name="validateSearchSection"/>
+		         <include name="validateSearchWithToggleDisabled"/>
+		         <include name="validateSearchWithToggleEnabled"/>
+		         <include name="validateOverFlowMenuItems"/>
+		         <include name="validateCuratedArtistPage"/>
+		         <include name="validateNonCuratedArtistPage"></include>
+		         <include name="validateTopSongsStory"/>
+	         	 <include name="validatePlayTopSongs"/>
+	         	 <include name="validateAlbumStory"/>
+	         	 <include name="validatePlaylistStory"/>
+	         	 <include name="validateTwitterFeedSection"/>
+	         	 <include name="validateBiographySection"/>
+	         	 <include name="validateSocialMediaHandles"/>
+	         	 <include name="validateFollowSectionOfArtist"/>
+	         	 <include name="validateMyMusicSection"/>
+	         </methods>
+         </class>
+      </classes>   
+  </test>
+  </suite>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity" parallel="tests" thread-count="1"
+	preserve-order="true">
+	<listeners>
+		<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer" />
+		<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TestNGError" />
+		<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener" />
+	</listeners>
+
+
+	<test name="OndeviceTest">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.OndeviceTest">
+				<methods>	
+					<include name="validateMp3andOfflineSongsForUnRegUser" />
+					<include name="validateFoldersToScanInMP3Playlist_REG" />
+				    <include name="validateFoldersToScanInMP3Playlist" />
+				    <include name="validateFoldersToScanRegUser" />
+					<include name="validateFoldersToScan" />
+					<include name="validateFoldersToScanInMP3Playlist_REG"/>
+					<include name="validateSelectFolderFromLocalMP3" />
+					<include name="validateSelectFoldersInMP3Playlist_REG"/>
+					<include name="validateLocalMp3Streaming" />
+					<include name="validateLocalMp3" />
+				    <include name="validateOnDevice" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

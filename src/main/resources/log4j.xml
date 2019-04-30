@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+
+<log4j:configuration debug="false"
+	xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- ====== Appenders ===== -->
+
+	<appender name="Console" class="org.apache.log4j.ConsoleAppender">	
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%c-%M] %c{1}:%L - %m %X{deviceName}%n" />
+		</layout>
+	</appender>
+
+	<appender name="DefaultFileAppender" class="org.apache.log4j.RollingFileAppender">
+		<!-- absolute path to log file -->
+		<param name="File" value="logs/automationlog" />
+		<param name="threshold" value="info" />
+		<!-- setting this to false will cause the file to be truncated with each 
+			restart -->
+		<param name="Append" value="true" />
+		<!-- MaxFileSize -->
+		<param name="MaxFileSize" value="8000KB" />
+		<!-- Oldest file will be deleted if more than n files were generated -->
+		<param name="MaxBackupIndex" value="6" />
+		<!-- Layout -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+		</layout>
+	</appender>
+	
+<!-- 	<appender name="fileAppender" class="org.apache.log4j.DailyRollingFileAppender"> -->
+<!-- <param name="File" value="logs/app"/> -->
+<!-- <param name="DatePattern" value="-yyyyMMdd-HHmm'.log'"/> -->
+<!-- <layout class="org.apache.log4j.PatternLayout"> -->
+<!-- <param name="ConversionPattern" value="%d [%t] %-5p (%F:%L) - %m%n"/> -->
+<!-- </layout> -->
+<!-- </appender> -->
+
+	<appender name="QueueTest" class="org.apache.log4j.DailyRollingFileAppender">
+		<!-- absolute path to log file -->
+		<param name="File" value="logs/QueueTest.txt" />
+		<param name="DatePattern" value="-yyyyMMdd'.log'" />
+		<param name="threshold" value="info" />
+		<!-- setting this to false will cause the file to be truncated with each 
+			restart -->
+		<param name="Append" value="true" />
+		<!-- MaxFileSize -->
+		<param name="MaxFileSize" value="8000KB" />
+	
+		<!-- Oldest file will be deleted if more than n files were generated -->
+		<param name="MaxBackupIndex" value="6" />
+		<!-- Layout -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%c-%M] %c{1}:%L - %m %X{deviceName}%n" />
+		</layout>
+	</appender>
+
+	<appender name="Appium" class="org.apache.log4j.DailyRollingFileAppender">
+		<!-- absolute path to log file -->
+		<param name="File" value="logs/Appium" />
+		<param name="DatePattern" value="-yyyyMMdd'.log'" />
+		<param name="threshold" value="info" />
+		<!-- setting this to false will cause the file to be truncated with each 
+			restart -->
+		<param name="Append" value="true" />
+		<!-- MaxFileSize -->
+		<param name="MaxFileSize" value="8000KB" />
+	
+		<!-- Oldest file will be deleted if more than n files were generated -->
+		<param name="MaxBackupIndex" value="6" />
+		<!-- Layout -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%c-%M] %c{1}:%L - %m %X{deviceName}%n" />
+		</layout>
+	</appender>
+	
+	<appender name="playListTest" class="org.apache.log4j.RollingFileAppender">
+		<!-- absolute path to log file -->
+		<param name="File" value="logs/playListTest.log" />
+		<param name="threshold" value="info" />
+		<!-- setting this to false will cause the file to be truncated with each 
+			restart -->
+		<param name="Append" value="true" />
+		<!-- MaxFileSize -->
+		<param name="MaxFileSize" value="8000KB" />
+		<!-- Oldest file will be deleted if more than n files were generated -->
+		<param name="MaxBackupIndex" value="6" />
+		<!-- Layout -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n" />
+		</layout>
+	</appender>
+
+
+
+	
+<!-- 	<logger name="com.bsb.wynkAndroid.Test.QueueTest"> -->
+<!-- 		<level value="DEBUG" /> -->
+<!-- 		<appender-ref ref="QueueTest" /> -->
+<!-- 		<appender-ref ref="Console" /> -->
+<!-- 	</logger> -->
+
+<!-- 	<logger name="com.bsb.wynkAndroid.Test.StreamingTest"> -->
+<!-- 		<level value="DEBUG" /> -->
+<!-- 		<appender-ref ref="QueueTest" /> -->
+<!-- 	</logger> -->
+	
+<!-- 	<logger name="com.bsb.wynkAndroid.Utils.IOUtil"> -->
+<!-- 		<level value="DEBUG" /> -->
+<!-- 		<appender-ref ref="QueueTest" /> -->
+<!-- 	</logger> -->
+	
+<!-- 	<logger name="com.bsb.wynkAndroid.Utils.LogThread"> -->
+<!-- 		<level value="DEBUG" /> -->
+<!-- 		<appender-ref ref="QueueTest" /> -->
+<!-- 	</logger> -->
+
+	<logger name="com.bsb.wynkAndroid">
+		<level value="DEBUG" />
+		<appender-ref ref="QueueTest" />
+		<appender-ref ref="Console" /> 
+	</logger>
+	
+	<logger name="StreamWrapper">
+		<level value="DEBUG" />
+		<appender-ref ref="Appium" />
+	</logger>
+
+	<!-- The root category -->
+<!-- 	<root> -->
+<!-- 		<level value="DEBUG" /> -->
+<!-- 		<appender-ref ref="QueueTest" /> -->
+<!-- 		<appender-ref ref="Console" /> -->
+<!-- 	</root> -->
+</log4j:configuration>

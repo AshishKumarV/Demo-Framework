@@ -1,0 +1,592 @@
+<html>
+<head>
+<title>TestNG:  QueueTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>QueueTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/10</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 12 18:32:55 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1076 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.launchApp()'><b>launchApp</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest<br>Parameters: http://0.0.0.0:4445/wd/hub</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1565797970", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1565797970'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.afterMethod()'><b>afterMethod</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.closeDriver()'><b>closeDriver</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest</td>
+<td></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.validateAddSongsToNewPlaylist()'><b>validateAddSongsToNewPlaylist</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest<br>Test method: TC_Queue_017,TC_Queue_018,TC_Queue_020,TC_Queue_021,TC_Queue_022,TC_Queue_005</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace604074789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace604074789'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.validateLockScreenControls()'><b>validateLockScreenControls</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest<br>Test method: TC_Player_045,TC_Player_188,TC_Player_189,TC_Player_190,TC_Player_191,TC_Player_192TC_Player_193,TC_Player_194,TC_Player_195,TC_Player_196,TC_Player_197,TC_Player_198,TC_Player_199</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1553530718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1553530718'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.validateMultiplePlayListInQueue()'><b>validateMultiplePlayListInQueue</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest<br>Test method: TC_Player_050,TC_Player_054,TC_Player_058,TC_Player_060,TC_Player_061,TC_Player_062,TC_Player_071,TC_Player_072,TC_Player_073,TC_Player_074,TC_Player_075,TC_Queue_006,TC_Queue_007,TC_Queue_008</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1960322248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1960322248'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.validatePlayMorethan500songs()'><b>validatePlayMorethan500songs</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest<br>Test method: TC_Queue_002</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace64271487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace64271487'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.validatePlayerNotificationControls()'><b>validatePlayerNotificationControls</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest<br>Test method: TC_Player_177,TC_Player_178,TC_Player_179,TC_Player_180,TC_Player_181,TC_Player_182TC_Player_183,TC_Player_184,TC_Player_185,TC_Player_186</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace452885871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace452885871'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.validateQueueHeader()'><b>validateQueueHeader</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest<br>Test method: TC_Queue_003,TC_Queue_014,TC_Queue_028,TC_Queue_036,TC_Player_049,TC_player_070,TC_Player_002,TC_Player_003</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33629713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33629713'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.validateQueueHeaderOnScroll()'><b>validateQueueHeaderOnScroll</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest<br>Test method: TC_Queue_026,TC_Queue_027,TC_Queue_029,TC_Queue_030,TC_Queue_031,TC_Queue_035</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2082950063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2082950063'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.validateRemoveSongFromQueue()'><b>validateRemoveSongFromQueue</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest<br>Test method: TC_Queue_039,TC_Queue_040,TC_Queue_046</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace534660584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace534660584'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.validateShuffle()'><b>validateShuffle</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest<br>Test method: TC_PLayer_001,TC_Player_041,TC_Player_042,TC_Player_043,TC_Player_049,TC_Player_051,TC_Player_055,TC_Player_056,TC_Player_069,TC_Player_079,TC_Queue_004</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1535150582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1535150582'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+<tr>
+<td title='com.bsb.wynkAndroid.Test.QueueTest.validateSongToPlaylist()'><b>validateSongToPlaylist</b><br>Test class: com.bsb.wynkAndroid.Test.QueueTest<br>Test method: TC_Queue_019,TC_Queue_038,TC_Queue_058,TC_Queue_059,TC_Player_007,TC_Player_010<br/>
+<a href="#Output-575027801" onClick='toggleBox("Output-575027801", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-575027801" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-575027801">
+Device Used = Could not find device!!<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace575027801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace575027801'><pre>java.lang.NullPointerException
+	at com.bsb.wynkAndroid.Test.QueueTest.launchApp(QueueTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.bsb.wynkAndroid.Test.QueueTest@358c99f5</td></tr>
+</table><p>
+</body>
+</html>

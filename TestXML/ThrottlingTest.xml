@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Throttling">
+<listeners>
+<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer"/>
+<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter"/>
+<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot"/>
+<listener class-name="com.bsb.wynkAndroid.Report.TestNGError"/> 
+<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener"/>
+</listeners>
+ 
+ <test name="ThrottlingTest">
+      <classes>
+         <class name="com.bsb.wynkAndroid.Test.NetworkThrottlingTest" >
+	         <methods>
+		         <include name="validateStreamingModule"></include>
+		         <include name="validateArtistModule"></include>
+		         <include name="validateSearchModule"></include>
+		         <include name="validateRentingModule"></include>
+		         <include name="validatePlaylistModule"></include>
+				 <include name="validateMyMusicModule"></include>
+		         <include name="validateHomescreenModule"></include>
+				 <include name="validateFollowForArtist"></include>
+				 <include name="validateRadioRails"></include>
+				 <include name="validateRadioModule"></include>
+				<include name="validateMoreScreenOfRailsOnHomescreen"></include>
+	         </methods>
+         </class>
+      </classes>   
+  </test>
+  </suite>

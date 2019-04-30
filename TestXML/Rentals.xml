@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Rentals">
+
+ 	<test name="RentalsTest">
+      <classes>
+         <class name="com.bsb.wynkAndroid.Test.RentalsTest" >
+         <methods>
+         	<include name="downloadSingleSongOfPlayList" />
+         </methods>
+         </class>
+      </classes>   
+  	</test>
+  	
+</suite>
+ 

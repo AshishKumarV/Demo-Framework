@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity" parallel="tests" thread-count="1"
+	preserve-order="true">
+	<listeners>
+		<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer" />
+		<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TestNGError" />
+		<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener" />
+	</listeners>
+
+
+	<test name="QueueTest">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.QueueTest">
+				<methods>
+					<include name="validateSongToPlaylist" />
+					<include name="validateAddSongsToNewPlaylist" />
+					<include name="validatePlayMorethan500songs" />
+					<include name="validateQueueHeaderOnScroll" />
+					<include name="validateShuffle" />
+					<include name="validateMultiplePlayListInQueue" />
+					<include name="validateQueueHeader" />
+					<include name="validateRemoveSongFromQueue" />
+					<include name="validatePlayerNotificationControls" />
+					<include name="validateLockScreenControls" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Queue" parallel="tests" thread-count="1" preserve-order="true">
+
+<listeners>
+<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer"/>
+<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter"/>
+<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot"/>
+<listener class-name="com.bsb.wynkAndroid.Report.TestNGError"/> 
+<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener"/>
+</listeners>
+
+<test name="Search"> 
+	<classes>
+		<class name="com.bsb.wynkAndroid.Test.SearchTest">
+			<methods>
+				<include name="validateSearchTopSong" /> 
+				<include name="validateMoreResults" />
+				<include name="validateDownloadSongFromSearch" />
+				<include name="validateArtistSearch" />
+				<include name="validateRecentSearches"></include>
+				<include name="validateSongSearchResult"></include>
+				<include name="validatePlayNowFromOverflow"></include>
+				<include name="validateAddToPlayListFromOverflow"/>
+				<include name="validateGetInfo"></include>
+				<include name="validateClearHistory"></include>
+				<include name="validatePlaySearchedResult"></include>
+				<include name="validateInvalidSearch"></include>
+				<include name="validateTrendingSong"></include>
+				<include name="validateAlbumSearch"></include>
+				<include name="validatePlayListSearch"></include>
+				<include name="validateOverFlowMenuOptions" />
+				<include name="validateVoiceSearch" />
+				<include name="validateCancelSearch"/>
+				<include name="validateSearchKeywordFromResultScreen"/>
+				<include name="validateSearchResultConsumption"/>
+				<include name="validateSearchAnotherKeyword"/>	
+				<include name="validateConsumeRecentSearch"/>	 
+				<include name="validateAutosuggest"/>
+			</methods>
+		</class>
+	</classes>
+</test>
+
+<!-- 	<test name="Music Preferences"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.bsb.wynkAndroid.Test.MusicPreferenceTest"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="validateMusicPreference" /> -->
+<!-- 					<include name="validateSelectedLanguageIsChecked" /> -->
+<!-- 					<include name="validateOnly1LanguageSelected" /> -->
+<!-- 					<include name="validateNonCuratedLanguages" /> -->
+<!-- 					<include name="validate5Languageswith2NonCurated" /> -->
+<!-- 					<include name="validateHomeLanguageOption" /> -->
+<!-- 					<include name="validateOnClickBehaviour" /> -->
+<!-- 					<include name="validateOnClickBehaviourSetAddtoQueue" /> -->
+<!-- 					<include name="validateOnClickBehaviourPopUpClossed" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+
+	<test name="Playlist" parallel="true">
+		<classes>
+			<class name="com.bsb.wynkAndroid.Test.PlayListTest">
+				<methods>
+					<include name="validateCreateNewPlaylist" />
+					<include name="validateWynkPlayLisElements"/>
+					<include name="validateSearchingWithPlayList" />
+					<include name="validateUserCreatedPlayListAndAddToPlayList" />
+					<include name="validateMakePlayListPrivateOrPublic" />
+					<exclude name="validatePlayAllSong" />
+					<include name="validateWynkPlaylistfollowOrUnFollow" />
+					<include name="validateUpdatePlaylist" />
+					<include name="validateWynkPlaylistSongMenubarOption" />
+					<include name="validateWynkPlaylistfollowOrUnFollowWithOffline" />
+					<include name="validateOfflinePlaylist">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+   
+  </suite> 
+  
+ 

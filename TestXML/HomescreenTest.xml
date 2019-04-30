@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Homescreen">
+<listeners>
+<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer"/>
+<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter"/>
+<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot"/>
+<listener class-name="com.bsb.wynkAndroid.Report.TestNGError"/> 
+<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener"/>
+</listeners>
+ 
+ <test name="HomescreenTest">
+      <classes>
+         <class name="com.bsb.wynkAndroid.Test.HomescreenTest" >
+	         <methods>
+<!-- 		         <include name="validateLatestLangSection" /> -->
+<!-- 		         <include name="validateOrderOfRails"/> -->
+<!-- 		         <include name="validateSinglesRail"/> -->
+<!-- 		         <include name="validateArtistsRail"/> -->
+<!-- 		         <include name="validatePlaylistRail"/> -->
+<!-- 		         <include name="validateAlbumsRail"/> -->
+<!-- 		         <include name="validateMoodsRail"/> -->
+		         <include name="validateFollowdArtistRail"/>
+<!-- 		         <include name="validateMusicLangCard"></include> -->
+<!-- 		         <include name="validateClickOnMoreOfRails"></include> -->
+<!-- 		         <include name="validateRecommendedSongs"></include> -->
+<!-- 		         <include name="validateRecommendedPlaylists"></include> -->
+	         </methods>
+         </class>
+      </classes>   
+  </test>
+  </suite>

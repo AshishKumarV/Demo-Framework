@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Download Songs]">
+  <parameter name="appPackage" value="com.bsbportal.music.debug"/>
+  <parameter name="ip" value="0.0.0.0"/>
+  <parameter name="hubHost" value="0.0.0.0"/>
+  <parameter name="hubPort" value="4445"/>
+  <parameter name="deviceName" value="ro.product.model"/>
+  <parameter name="url" value="http://0.0.0.0:4445/wd/hub"/>
+  <parameter name="port1" value="4723"/>
+  <parameter name="port2" value="4724"/>
+  <parameter name="oldAppPath" value="/OldBuilds/Music-prod-playstore-debug.apk"/>
+  <parameter name="platformVersion" value="ro.build.version.release"/>
+  <parameter name="udid2" value="59d8ff77d140 8HY9WCHAQSJN8PIR"/>
+  <parameter name="udid1" value="2321"/>
+  <parameter name="appLocationForUpgrade" value="/Apps/Music-prod-playstore-debug.apk"/>
+  <listeners>
+    <listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer"/>
+    <listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter"/>
+    <listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot"/>
+    <listener class-name="com.bsb.wynkAndroid.Report.TestNGError"/>
+    <listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener"/>
+  </listeners>
+  <test thread-count="5" name="Download Song(failed)">
+    <classes>
+      <class name="com.bsb.wynkAndroid.Test.DownloadSongsTest">
+        <methods>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="validateDownloadUnRegisteredUserFollowArtist"/>
+          <include name="beforeMethod"/>
+          <include name="launchApp"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.bsb.wynkAndroid.Test.DownloadSongsTest -->
+    </classes>
+  </test> <!-- Download Song(failed) -->
+</suite> <!-- Failed suite [Download Songs] -->

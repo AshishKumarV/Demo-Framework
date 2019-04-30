@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Sanity" parallel="tests" thread-count="1" preserve-order="true">
+	
+	<listeners>
+		<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer" />
+		<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot" />
+		<listener class-name="com.bsb.wynkAndroid.Report.TestNGError" />
+		<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener" />
+	</listeners>
+	
+	<test name="OfflineTest"> 
+		<classes> 
+			<class name="com.bsb.wynkAndroid.Test.OfflineTest"> 
+				<methods> 
+					<include name="validateDownloadedSongPlayinOffline"/> 
+					<include name="validateEmptyState"/>
+					<include name="validateCroutonBarExistence"/>
+					<include name="validateCachedSegmentPlayInOfflineMode"/>  
+					<include name="validateLocalMp3InOffline"/>
+					<include name="validateOnlineSongIsNotPlayed"/>
+					<include name="validateAddToPlaylistInOffline"/>
+					<include name="validateRadioInitiateInOffline"/>
+					<include name="validatePlayRentedSongFromHome"/>
+					<include name="validateSearchInOffline"/>
+					<include name="validateFollowArtistAndPlaylist"/>
+				</methods> 
+			</class> 
+		</classes> 
+	</test>
+	
+</suite>

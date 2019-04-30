@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.bsb.wynkAndroid.Report.AnnotationTransformer"/>
+<listener class-name="com.bsb.wynkAndroid.Report.ExtentReporter"/>
+<listener class-name="com.bsb.wynkAndroid.Report.TakeScreenshot"/>
+<listener class-name="com.bsb.wynkAndroid.Report.TestNGError"/> 
+<listener class-name="com.bsb.wynkAndroid.Utils.PropertyInjectorListener"/>
+</listeners>
+ <test name="UpgradesTest">
+      <classes>
+         <class name="com.bsb.wynkAndroid.Test.UpgradesTest" >
+	         <methods>
+		         <include name="validateUpgradeForUnregisteredUser"/>
+		         <include name="validateUpgradeForRegisteredUser" />
+		         <include name="validateMigration" />
+	         </methods>
+         </class>
+      </classes>   
+  </test>
+  </suite>
